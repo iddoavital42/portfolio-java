@@ -1,27 +1,36 @@
-# bank Project
+# 📦 Inventory Manager (Java + Swing)
 
-## 📌 Description
-A simple banking system simulation where users can withdraw, deposit, and check balance via the console.
+This is a simple desktop application built with **Java** and **Swing** to manage product inventory. It allows users to add, remove, search, and update products, as well as save and load data from a file.
 
-## 💻 Interface
-🖨 Console
+---
 
-## 📂 Main File(s)
-ATMProgram.java
+## ✨ Features
 
-## ▶️ How to Run
+- Add new products with ID, name, quantity, and price
+- Remove existing products by ID
+- Search for products by ID
+- Update product details
+- View all current products
+- Save inventory to a `.txt` file
+- Load inventory from a `.txt` file
+- Clean and intuitive **Swing GUI**
 
-Make sure you have Java installed. Then compile and run using:
+---
+
+## 🛠️ Technologies Used
+
+- Java 19+
+- Swing (Java GUI library)
+- File I/O (Read/Write from `.txt`)
+
+---
+
+## 📁 File Structure
 
 ```bash
-javac ATMProgram && java Main
-```
-
-## 📚 Technologies Used
-- Java
-- Console-based Input/Output
-
-## 🧠 What I Learned
-- Structuring Java projects
-- Working with console-based input/output and logic
-- Writing clean, modular Java code
+InventoryManager/
+├── Product.java             # Represents a single product
+├── Inventory.java           # Manages list of products and file operations
+├── InventoryManager.java    # GUI application with Swing
+├── products.txt             # Inventory data file (created at runtime)
+└── README.md                # Project documentation
